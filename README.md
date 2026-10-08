@@ -12,6 +12,8 @@ no model is retrained. The workshop installs it, connects it to an AI assistant,
 through three real problems in genetics, biology and clinical therapeutics, auditing each
 trace.
 
+**Following along live?** Start with [follow-along.md](follow-along.md): two queries to paste into your assistant.
+
 ## What's here
 
 | Folder | Contents |
