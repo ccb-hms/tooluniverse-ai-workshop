@@ -10,7 +10,7 @@ CCB AI Workshop · ToolUniverse · 8 October 2026
 
 ## 1. Clinical: does the evidence cover this patient?
 
-**Background:** A patient with atrial fibrillation needs a blood thinner, but has severe kidney disease (stage 4, not on dialysis). The major drug trials left patients like this out. So the real question is whether any published evidence is actually about this patient.
+**Background:** A patient with atrial fibrillation is being considered for a blood thinner to prevent stroke, but has severe kidney disease (stage 4, not on dialysis). The major trials of these drugs excluded patients with kidney function this low. So the real question is whether any published evidence is actually about this patient.
 
 **Useful for:** clinicians, pharmacists, and anyone doing literature or evidence reviews.
 
@@ -46,5 +46,7 @@ Using ToolUniverse, rs12740374 is a common non-coding variant at the 1p13 locus,
 - **It can take a few minutes.** The first call after install is slower.
 - **Some databases need API keys.** Without them, your agent may skip a source or use another one.
 - **Read the reasoning, not just the answer.** The tools return real data, but the model can still draw the wrong conclusion.
+
+Each step of our 5 October 2026 runs (the reasoning, each ToolUniverse call, and what came back) is shown in the workshop slides in this repository.
 
 Questions: ccb_help@hms.harvard.edu
