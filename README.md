@@ -15,8 +15,8 @@ through two real problems, one clinical and one in genetics, auditing each trace
 
 | File | Contents |
 |---|---|
-| [`slides/01-ccb-intro.pdf`](slides/01-ccb-intro.pdf) | CCB introduction and the AI Seminar & Workshop Series schedule |
-| [`slides/02-tooluniverse-workshop.pdf`](slides/02-tooluniverse-workshop.pdf) | The workshop deck: why tools, installing ToolUniverse, how it works, and both examples turn by turn, with every tool call and what it returned |
+| [`slides/ccb-intro.pdf`](slides/ccb-intro.pdf) | CCB introduction and the AI Seminar & Workshop Series schedule |
+| [`slides/tooluniverse-workshop.pdf`](slides/tooluniverse-workshop.pdf) | The workshop deck: why tools, installing ToolUniverse, how it works, and both examples turn by turn, with every tool call and what it returned |
 | [`follow-along.md`](follow-along.md) | The two example queries, ready to paste into your own assistant |
 
 ## Quickstart
@@ -88,7 +88,7 @@ Or paste the error into the chat that did the install and say "fix it."
 
 Every call was run against live databases on October 5, 2026; databases change, so a rerun
 can return different numbers. The full runs, turn by turn, are in the
-[workshop deck](slides/02-tooluniverse-workshop.pdf). All examples use public data, and the
+[workshop deck](slides/tooluniverse-workshop.pdf). All examples use public data, and the
 clinical case is a hypothetical patient. Do not send PHI, PII or restricted clinical data to
 tools that call external services, or to any external model.
 
@@ -109,12 +109,12 @@ tools that call external services, or to any external model.
 If you use ToolUniverse in your work, please cite the paper in *Nature Methods*:
 
 > Gao, S., Zhu, R., Sui, P., Kong, Z., Aldogom, S., Huang, Y., Noori, A., Shamji, R.,
-> Parvataneni, K., Tsiligkaridis, T., & Zitnik, M. (in press). Democratizing AI scientists
-> using ToolUniverse. *Nature Methods*.
+> Parvataneni, K., Tsiligkaridis, T., & Zitnik, M. (in press). ToolUniverse: An open
+> platform for democratizing AI scientists. *Nature Methods*.
 
 ```bibtex
-@article{gao2025democratizingaiscientistsusing,
-  title   = {Democratizing AI scientists using ToolUniverse},
+@article{gao2025tooluniverse,
+  title   = {ToolUniverse: An open platform for democratizing AI scientists},
   author  = {Shanghua Gao and Richard Zhu and Pengwei Sui and Zhenglun Kong and Sufian Aldogom and Yepeng Huang and Ayush Noori and Reza Shamji and Krishna Parvataneni and Theodoros Tsiligkaridis and Marinka Zitnik},
   journal = {Nature Methods},
   year    = {in press},
