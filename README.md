@@ -113,7 +113,7 @@ If you use ToolUniverse in your work, please cite the paper in *Nature Methods*:
 > platform for democratizing AI scientists. *Nature Methods*.
 
 ```bibtex
-@article{gao2025tooluniverse,
+@article{gao2026tooluniverseopenplatformdemocratizing,
   title   = {ToolUniverse: An open platform for democratizing AI scientists},
   author  = {Shanghua Gao and Richard Zhu and Pengwei Sui and Zhenglun Kong and Sufian Aldogom and Yepeng Huang and Ayush Noori and Reza Shamji and Krishna Parvataneni and Theodoros Tsiligkaridis and Marinka Zitnik},
   journal = {Nature Methods},
