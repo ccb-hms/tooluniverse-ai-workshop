@@ -1,25 +1,23 @@
 # Building AI Co-Scientists with ToolUniverse
 
-Slides and worked examples from a hands-on workshop in the Core for Computational
-Biomedicine (CCB) AI Seminar & Workshop Series at Harvard Medical School, taught by members of the Zitnik Lab who build
-[ToolUniverse](https://github.com/mims-harvard/ToolUniverse).
+Slides and worked examples from the October 8, 2026 workshop in the Core for Computational
+Biomedicine (CCB) AI Seminar & Workshop Series at Harvard Medical School, taught by members
+of the Zitnik Lab, who build [ToolUniverse](https://github.com/mims-harvard/ToolUniverse).
 
 [ToolUniverse](https://aiscientist.tools) is an open platform that gives any AI model more
-than 2,700 scientific tools and 130 research skills, from Open Targets, ChEMBL, UniProt,
+than 2,700 scientific tools and 180 research skills, from Open Targets, ChEMBL, UniProt,
 openFDA, ClinicalTrials.gov and PubMed to models such as Boltz-2 and ADMET-AI. Every tool
 declares its purpose, a typed input and output schema, and a standard way to call it, so
 no model is retrained. The workshop installs it, connects it to an AI assistant, and works
-through three real problems in genetics, biology and clinical therapeutics, auditing each
-trace.
-
-**Following along live?** Start with [follow-along.md](follow-along.md): two queries to paste into your assistant.
+through two real problems, one clinical and one in genetics, auditing each trace.
 
 ## What's here
 
-| Folder | Contents |
+| File | Contents |
 |---|---|
-| [`slides/`](slides/) | The workshop deck, as PowerPoint and PDF |
-| [`applications/`](applications/README.md) | The three worked examples, one page each: the question, what every term in it means, and the run turn by turn, with each tool call, what it returned, and the reasoning between them |
+| [`slides/01-ccb-intro.pdf`](slides/01-ccb-intro.pdf) | CCB introduction and the AI Seminar & Workshop Series schedule |
+| [`slides/02-tooluniverse-workshop.pdf`](slides/02-tooluniverse-workshop.pdf) | The workshop deck: why tools, installing ToolUniverse, how it works, and both examples turn by turn, with every tool call and what it returned |
+| [`follow-along.md`](follow-along.md) | The two example queries, ready to paste into your own assistant |
 
 ## Quickstart
 
@@ -40,6 +38,8 @@ Code, the ChatGPT app or Codex CLI. Python is not required; the installer brings
 
    You should see a call to `find_tools` or `list_tools`, then `execute_tool`, then a real
    PMID and title. The first call after install takes 30 to 60 seconds while packages load.
+
+3. Try the two worked examples yourself: [follow-along.md](follow-along.md).
 
 <details>
 <summary>Set it up from a terminal instead</summary>
@@ -79,18 +79,18 @@ Or paste the error into the chat that did the install and say "fix it."
 
 </details>
 
-## The three applications
+## The two examples
 
 | Field | Question | Tool calls, in order |
 |---|---|---|
-| [Genetics](applications/genetics/README.md) | Which gene does a non-coding variant control, and in which tissue? | `dbsnp_get_variant_by_rsid`, `GTEx_get_single_tissue_eqtls`, `UCSC_get_tf_binding_clusters` |
-| [Biology](applications/biology/README.md) | What changes after a TP53 knockout, and in which direction? | `OmniPath_get_dorothea_regulon`, `STRING_get_interaction_partners` |
-| [Clinical](applications/clinical/README.md) | Apixaban or warfarin at an eGFR of 22, and does the evidence cover this patient? | `PubMed_search_articles` twice, `PubMed_get_article_metadata`, `PubMed_search_articles` |
+| [Clinical](follow-along.md#1-clinical-does-the-evidence-cover-this-patient) | Apixaban or warfarin at an eGFR of 22, and does the evidence cover this patient? | `PubMed_search_articles` twice, `PubMed_get_article_metadata`, `PubMed_search_articles` |
+| [Genetics](follow-along.md#2-genetics-which-gene-does-this-variant-control) | Which gene does a non-coding variant control, and in which tissue? | `dbsnp_get_variant_by_rsid`, `GTEx_get_single_tissue_eqtls`, `UCSC_get_tf_binding_clusters`, `PubMed_search_articles` |
 
 Every call was run against live databases on October 5, 2026; databases change, so a rerun
-can return different numbers. All examples use public data, and the clinical case is a
-hypothetical patient. Do not send PHI, PII or restricted clinical data to tools that call
-external services, or to any external model.
+can return different numbers. The full runs, turn by turn, are in the
+[workshop deck](slides/02-tooluniverse-workshop.pdf). All examples use public data, and the
+clinical case is a hypothetical patient. Do not send PHI, PII or restricted clinical data to
+tools that call external services, or to any external model.
 
 ## Credits
 
